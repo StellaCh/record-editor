@@ -109,7 +109,7 @@ export class AppConfigService {
             alwaysShow: ['value']
           },
           '/accelerator_experiments/items': {
-            alwaysShow: ['experiment'],
+            alwaysShow: ['legacy_name'],
             order: ['institution', 'accelerator', 'experiment', 'legacy_name']
           },
           '/acquisition_source/properties': {
