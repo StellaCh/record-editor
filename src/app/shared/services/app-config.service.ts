@@ -55,7 +55,6 @@ export class AppConfigService {
               'deleted'
             ],
             alwaysShow: [
-              'core',
               'citeable',
               'refereed',
               'withdrawn',
@@ -155,8 +154,15 @@ export class AppConfigService {
           '/authors/items/properties/uuid': {
             hidden: true
           },
+          '/authors/items/properties/signature_block': {
+            hidden: true
+          },
           '/authors/items/properties/affiliations/items': {
-            alwaysShow: ['value']
+            alwaysShow: ['value'],
+            order: ['value','record']
+          },
+          '/authors/items/properties/ids/items/value': {
+            priority: 1
           },
           '/authors/items/properties/affiliations/items/properties/record': {
             refFieldConfig: {
